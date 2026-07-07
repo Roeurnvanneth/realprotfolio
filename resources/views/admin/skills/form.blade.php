@@ -5,6 +5,7 @@
     <form method="POST" action="{{ $skill->exists ? route('admin.skills.update', $skill) : route('admin.skills.store') }}">
         @csrf
         @if($skill->exists) @method('PUT') @endif
+        
 
         <div class="field">
             <label>Skill Name</label>
@@ -28,3 +29,10 @@
     </form>
 </div>
 @endsection
+
+
+
+
+
+
+

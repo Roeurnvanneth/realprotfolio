@@ -8,7 +8,7 @@
 
         <div class="field">
             <label>Title</label>
-            <input type="text" name="title" value="{{ old('title', $project->title) }}" required>
+           <input type="text" name="title" value="{{ old('title', $project->title) }}" required>
         </div>
         <div class="field">
             <label>Category</label>

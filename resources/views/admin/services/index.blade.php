@@ -11,7 +11,13 @@
     @else
         <div class="table-wrap">
         <table>
-            <thead><tr><th>Title</th><th>Description</th><th></th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th></th>
+                </tr>
+            </thead>
             <tbody>
             @foreach($services as $service)
                 <tr>

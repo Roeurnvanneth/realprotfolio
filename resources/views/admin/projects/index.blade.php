@@ -11,7 +11,15 @@
     @else
         <div class="table-wrap">
         <table>
-            <thead><tr><th></th><th>Title</th><th>Category</th><th>Featured</th><th></th></tr></thead>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Featured</th>
+                    <th></th>
+                </tr>
+            </thead>
             <tbody>
             @foreach($projects as $project)
                 <tr>

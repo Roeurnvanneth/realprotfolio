@@ -18,7 +18,7 @@ class SiteController extends Controller
     private function settings(): array
     {
         return [
-            'site_title'    => Setting::get('site_title', 'My Portfolio'),
+            'site_title'    => Setting::get('site_title', 'My Port'),
             'site_tagline'  => Setting::get('site_tagline', ''),
             'footer_text'   => Setting::get('footer_text', ''),
             'contact_email' => Setting::get('contact_email', ''),
@@ -86,7 +86,7 @@ class SiteController extends Controller
             'subject' => 'nullable|string|max:255',
             'message' => 'required|string|max:5000',
         ]);
-
+        
         ContactMessage::create($data);
 
         return back()->with('status', 'Thanks! Your message has been sent.');

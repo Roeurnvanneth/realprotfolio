@@ -17,7 +17,7 @@
         <div class="field">
             <label>Location</label>
             <input type="text" name="location" value="{{ old('location', $experience->location) }}">
-        </div>
+        </div>    
         <div class="field">
             <label>Start Date</label>
             <input type="date" name="start_date" value="{{ old('start_date', $experience->start_date?->format('Y-m-d')) }}" required>
