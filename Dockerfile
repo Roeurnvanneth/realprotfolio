@@ -27,6 +27,7 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 RUN npm install
+RUN docker-php-ext-install zip pdo_mysql
 
 RUN npm run build
 

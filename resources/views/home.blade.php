@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 <style>
     /* =========================================
        PORTFOLIO THEME — UPDATED ABOUT SECTION
